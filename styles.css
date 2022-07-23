@@ -1,0 +1,52 @@
+html,*,::before,::after{box-sizing:border-box;margin:0;padding:0;}
+body{display:flex;justify-content:space-between;align-items:strech;font-family:Helvetica;position:relative;}
+nav{position:fixed;z-index:999;min-width:290px;width:330px;height:100%;top:0;left:0;background:#fff;border-right:3px solid #777}
+nav header h1 {font-size:2rem;padding:20px;}
+nav ul {list-style:none;height:88%;overflow-y:scroll;overflow-x:hidden;}
+nav ul li{border-top:1px solid #4d4e53; }
+nav ul li a {padding: 15px 20px;font-size:1.2rem;color:#4d4e53;display:block;text-decoration:none;cursor:pointer}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #555;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: linear-gradient(150deg,red,darkred);}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(150deg,#f10000,darkred);;
+}
+
+main{position:absolute;margin-left:330px;right:0;top:0;padding:50px  45px;}
+main .main-section article
+{
+  padding:10px 0px 
+}
+main .main-section article p,main .main-section article ul li{
+  color:#4d4e53;
+  font-size:1rem;line-height:27px;
+  margin:0px 0px 20px;
+}
+
+main .main-section article ul 
+{
+  padding:10px 30px;
+}
+
+code {background:#f1f1f1;padding:15px;border-radius:4px;display:block;margin:10px 0px;line-height:26px;color:#444}
+main ul li a{color:#555;text-decoration:none;font-weight:bold;}
+
+@media(max-width:768px)
+{
+  nav{min-width:100px ;width:255px}
+  nav header h1 {font-size:1.5rem}
+  nav ul li a {padding: 10px 20px;font-size:.9rem;}
+  main{margin-left:255px;}
+}
