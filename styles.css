@@ -111,6 +111,6 @@ scroll-behavior:smooth;
     }
      main{
         left:200px;
-        padding:40px 35px
+        padding:40px 35px;width:100%;
     }
 }
